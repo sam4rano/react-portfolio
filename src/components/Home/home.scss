@@ -1,4 +1,12 @@
-
+.logoS {
+  position: relative;
+  left:600px;
+  animation: rotateIn 1s linear both;
+  animation-delay: 1.4s;
+  min-height: 200px;
+  width:300px;
+  top:100px;
+}
 .home-page {
     .text-zone {
       position: absolute;

@@ -4,6 +4,7 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import './home.scss';
 import AnimatedLetter from '../AnimatedLetter/AnimatedLetter';
 // import Logo from './Logo/Logo'
+import LogoSS from '../../assets/images/logo-s.png';
 import Loader from 'react-loaders'
 
 
@@ -55,6 +56,7 @@ const Home = () => {
         </div>
         {/* <Logo /> */}
       </div>
+      <img src={LogoSS} alt="logo" className="logoS" />
     </>
   )
 }
