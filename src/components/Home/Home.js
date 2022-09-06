@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
 import './home.scss';
 import AnimatedLetter from '../AnimatedLetter/AnimatedLetter';
-import Logo from './Logo/Logo'
+// import Logo from './Logo/Logo'
 import Loader from 'react-loaders'
 
 
@@ -53,7 +53,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        {/* <Logo /> */}
       </div>
     </>
   )
