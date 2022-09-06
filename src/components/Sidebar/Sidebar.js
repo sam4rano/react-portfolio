@@ -3,16 +3,15 @@ import './sidebar.scss';
 import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope, faHome, faUser, faSuitcase} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons';
-import { useEffect, useState } from 'react';
+
 
 const Sidebar = () => {
 
-    const [showNav, setShowNav] = useState(false);
   return (
     <div className="sidebar">
-        <Link className="logo" to="/" onClick={() => setShowNav(false)}>
+        <Link className="logo" to="/" >
             <img src={LogoS} alt="logo" />
             <img className="sub-logo" src={LogoSubtitle} alt="samuel" />
         </Link>
@@ -25,6 +24,9 @@ const Sidebar = () => {
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className="project-link" to="/project">
+                <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
             </NavLink>
         </nav>
         <ul>

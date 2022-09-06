@@ -7,6 +7,7 @@
     z-index: 3;
     min-height: 500px;
 
+
     .logo {
         display: block;
         padding: 8px 0;
@@ -83,6 +84,11 @@
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+            } 
+        }
+        a.project-link {
+            &:after {
+                content: 'PROJECT';
             } 
         }
 

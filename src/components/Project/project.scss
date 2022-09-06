@@ -1,0 +1,24 @@
+.project-page {
+    height:100%;
+    overflow:scroll;
+    overflow-x:hidden;
+
+    .image-page {
+        display: block;
+        max-height: 1000px;
+        top:20%;
+        right:30%;
+        position:absolute;
+        
+
+        img {
+            display: inline;
+
+            
+            margin: 8px;
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+}

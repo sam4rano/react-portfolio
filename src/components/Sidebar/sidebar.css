@@ -71,6 +71,9 @@
 .sidebar nav a.contact-link:after {
   content: "CONTACT";
 }
+.sidebar nav a.project-link:after {
+  content: "PROJECT";
+}
 .sidebar nav a.active svg {
   color: #ffd700;
 }
