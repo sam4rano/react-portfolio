@@ -1,0 +1,66 @@
+The main stack of this project includes
+1. emailjs: to handle the emailjs
+
+How does EmailJS work?
+EmailJS helps to send emails using client-side technologies only. No server is 
+required – just connect EmailJS to one of the supported email services, create an 
+email template, and use our Javascript library to trigger an email.
+Email templates can optionally contain dynamic variables in almost any field 
+(e.g. subject, content, TO address, FROM name, etc) which are populated from the 
+Javascript call. For example, the subject can be "{{ name }}, 
+you have a new message", and using JavaScript the name can be set to 
+"James Dean", for instance.
+
+Additionally, you can easily add attachments, require CAPTCHA validation, 
+switch between the email services without making code changes, review the history 
+of the email request, and more.
+2. Font-awesome-icon: This is installed using npm install npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
+with this i have access to free icons to use for my project
+
+3. animate.css
+Animate.css is a library of ready-to-use, cross-browser animations for use in your web projects. 
+Great for emphasis, home pages, sliders, and attention-guiding hints.
+
+4. gsap-trial
+This package is only intended for experimentation during development. It contains 
+the public GSAP files plus all bonus plugins which are normally available exclusively 
+to Club GreenSock members, including ScrollSmoother, DrawSVGPlugin, MorphSVGPlugin, SplitText, GSDevTools, InertiaPlugin, and more. 
+The trial plugins only work locally and on certain approved domains like codesandbox.io, codepen.io, stackblitz.com, and jsfiddle.com. Deploying 
+them elsewhere violates the license and will result in a browser redirect!
+
+
+5. loaders.css
+Loading.io's CSS spinner uses CSS Animation, which is wildly supported by all modern browsers such as 
+Google Chrome and Mozilla Firefox. However, Microsoft Internet 
+Explorer version earlier than 10 don't support CSS Animation.
+
+6. React-Leaflet
+React Leaflet provides bindings between React and Leaflet. It does not replace Leaflet, 
+but leverages it to abstract Leaflet layers as React components. As such, 
+it can behave differently from how other React components work, notably:
+
+leaflet.js:Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps. Weighing just about 42 KB of JS, it has all the mapping features most developers ever need.
+
+Leaflet is designed with simplicity, performance and usability in mind. It works efficiently 
+across all major desktop and mobile platforms, can be extended with lots of plugins, has a beautiful, easy to use and well-documented 
+API and a simple, readable source code that is a joy to contribute to.
+
+
+7. React-loaders
+react-spinner-loader provides simple React SVG spinner component which can be implemented for async await operation
+before data loads to the view.
+
+8. React-router-dom
+React Router DOM is an npm package that enables you to implement dynamic routing in a web
+app. It allows you to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library for React. React Router Dom is used to build single-page applications i.e. applications that have many pages or components but the page is never refreshed instead the content is dynamically fetched based on the URL. This process is 
+called Routing and it is made possible with the help of React Router Dom.
+
+React Router Dom has many useful components and to create fully functioning routing, you need most of these.
+
+Router(usually imported as BrowserRouter):  It is the parent component that is used to store all of the other components. Everything within this will be part of the routing functionality
+Switch: Switch component is used to render only the first route that matches the location rather than rendering all matching routes.
+Route: This component checks the current URL and displays the component associated with that exact path. All routes are placed within the switch components.
+Link: Link component is used to create links to different routes.

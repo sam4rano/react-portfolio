@@ -1,0 +1,5 @@
+It is very important in react when a setTimeout is been set to 
+always clear it when done else the code misbehave
+https://upmostly.com/tutorials/settimeout-in-react-components-using-hooks
+
+setting and clearing timeout in reacthttps://stackoverflow.com/questions/53090432/react-hooks-right-way-to-clear-timeouts-and-intervals

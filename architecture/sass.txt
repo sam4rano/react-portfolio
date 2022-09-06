@@ -1,0 +1,119 @@
+This is the step i took in running sass on my react project
+ sass : Sass is a stylesheet language that’s compiled to CSS. It allows you to 
+ use variables, nested rules, mixins, functions, and more, all with a fully 
+ CSS-compatible syntax. Sass helps keep large stylesheets well-organized and makes 
+ it easy to share design within and across projects.
+
+ "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+Sass is a pre-processing language with features extending regular CSS, like variables, nesting, imports,
+ mixing and more. Many frameworks are built with Sass, including Foundation, 
+ Susy, Compass, and many more. "
+
+ full meaning syntactically style sheet
+ When you install Sass on the command line by running npm install 
+ 1. Install sass using npm
+To install the sass package and save it as a dependency, run:
+
+npm i sass --save
+
+2. Create sass files
+Now that you have sass installed, you can now use it in your application. 
+Additionally, do not forget to import the stylesheets into your application. 
+How I go about doing this is creating an scss folder (which will contain all of 
+the stylesheets) inside of the src folder named "sass".
+Inside this folder i created an architecture to handle all my stylesheet
+i created different folder for different needs
+1. Base folder is a folder that contains the stylesheet that globally applies to my styling
+BASE FOLDER
+The base/ folder holds what we might call the boilerplate code for the project. In there, you might find the reset file, some typographic rules, and probably 
+a stylesheet, defining some standard styles for commonly used HTML elements.
+
+2. Component folder
+COMPONENTS FOLDER
+For smaller components, there is the components/ folder. While layout/ is macro (defining the global wireframe), components/ is more focused on widgets. It contains all kind of specific modules like a slider, a loader, a widget, and basically anything along those lines. There are usually a 
+lot of files in components/ since the whole site/application should be mostly composed of tiny modules.
+Components: anything reusable such as buttons, navbars, cards etc.
+
+3. Abstracts folder
+
+Base: contained within this file are all your resets, variables, mixins, and any utility classes.
+
+Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
+
+
+
+Abstracts (or utilities): 
+holds Sass tools, helper files, variables, functions, mixins and other config files. 
+These files are meant to be just helpers which don’t output any CSS when compiled.
+
+Base: holds the boilerplate code for the project. Including standard styles such as
+resets and typographic rules, which are commonly used throughout your project.
+
+Components (or modules): holds all of your styles for buttons, carousels, sliders,
+and similar page components (think widgets). Your project will typically contain 
+a lot of component files — as the whole site/app should be mostly composed of small
+modules.
+
+Layout: contains all styles involved with the layout of your project. Such as styles
+for your header, footer, navigation and the grid system.
+
+Pages: any styles specific to individual pages will sit here. For example it’s not 
+uncommon for the home page of your site to require page specific styles that no other
+page receives.
+
+Themes: this is likely not used in many projects. It would hold files that create 
+project specific themes. For example if sections of your site contain alternate color
+schemes.
+
+Vendors: contains all third party code from external libraries and frameworks — such
+as Normalize, Bootstrap, jQueryUI, etc. However, there is often a need to override 
+vendor code. If this is required, its good practice to create a new folder called 
+vendors-extensions/ and then name any files after the vendors they overwrite. 
+The filevendors-extensions/_bootstrap.scss would contain all your Bootstrap overrides 
+— as editing the vendor files themselves, isn’t generally a good idea.
+
+
+
+Main.scss: This file should only contain your imports! For example..
+
+
+@import "abstracts/mixin";
+@import "abstracts/variable";
+
+@import "base/base";
+@import "base/utility";
+@import "base/animation";
+@import "base/typography";
+
+@import "components/contact";
+@import "components/aboutus";
+@import "components/footer";
+@import "components/home";
+@import "components/resume";
+@import "components/testimonial";
+
+
+
+Note: There’s no need to include the _ or .scss file extension when importing.
+
+
+"This is how to import and use google fonts in projects"
+Try this
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+use font-family like
+
+font-family: 'PT Sans Caption', sans-serif;
+
+
+
+
+
+to animation effects, typography utility and 
+ I then import all of the styles in the 
+folder into a single file (styles.js) so that I can import it into the root component of my app (App.js).
+  you'll be able to run the sass executable to compile .sass and .scss files to .css files. For example:
+ sass source/stylesheets/index.scss build/stylesheets/index.css
+
+credits: sass, Timothy Robards, 
+

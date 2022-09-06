@@ -1,0 +1,26 @@
+1. Creating the useEffect gave me a lot of issues
+as the way i created it according to the project i follow did'nt work
+So i had to sort for how to deal with with it 
+My way solution was 
+After creating the useEffectuseEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [])
+
+  i created another variable to handle the timeout which was the primary issuesi faced
+  at the start
+  setTimeout was created to handle the timeout of the
+  animation created while clearTimeout clear the timeout
+
+
+  2. The second major issue i faced was when i was trying to change the map
+  to my locaation  it was a bit of an issue
+  but i later added the coordinates of my location and that save me of the setLetterClass
+
+
+  3. The third issues was with using emailjs: the way it was stated in the tutorial didn' work for me
+  so i have to create a variable to handle all the required filevendors
+  templateId, serviceId and the publicToken and pass it as 
+  a parameter to sendForm  that makes a lot of sense
