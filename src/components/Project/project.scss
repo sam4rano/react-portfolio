@@ -1,24 +1,47 @@
 .project-page {
-    height:100%;
-    overflow:scroll;
-    overflow-x:hidden;
+  height: 100%;
+  overflow-x: scroll;
 
-    .image-page {
-        display: block;
-        max-height: 1000px;
-        top:20%;
-        right:30%;
-        position:absolute;
-        
+  scrollbar-color: #ffd700;
+  position: absolute;
+  left: 10%;
+  padding-bottom: 20px;
 
-        img {
-            display: inline;
+  &:hover img {
+    opacity: 0.3;
+  }
+  &:hover .middle {
+    opacity: 1;
+  }
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-            
-            margin: 8px;
-            width: 400px;
-            height: 300px;
-        }
+  .page1 {
+    margin-bottom: 20px;
+  }
+  .image-page {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    margin-left: 30px;
+
+    img {
+      margin: 20px;
+      width: 500px;
+      height: 100%;
+      opacity: 1;
+      display: block;
+      opacity: 1;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
     }
-
+  }
 }
