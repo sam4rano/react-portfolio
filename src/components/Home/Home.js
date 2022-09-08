@@ -3,17 +3,15 @@ import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
 import './home.scss';
 import AnimatedLetter from '../AnimatedLetter/AnimatedLetter';
-// import Logo from './Logo/Logo'
 import LogoSS from '../../assets/images/logo-s.png';
 import Loader from 'react-loaders'
-
 
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
   const nameArray = ['a', 'm', 'u', 'e', 'l'];
-  const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.'];
+  const jobArray = ['S','o','f','t','w','a','r','e',' ','d','e','v','e','l','o','p','e','r','.'];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,7 +33,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m</span>
             <img
               src={LogoTitle}
-              alt="Frontend Developer Name, Web Developer Name"
+              alt="Frontend Developer Name, Audio Engineer Name"
             />
             <AnimatedLetter
               letterClass={letterClass}

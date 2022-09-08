@@ -96,10 +96,9 @@ const Contact = () => {
         <div className='info-map'>
             Samuel Oyerinde,
             <br />
-            Nigeria
-            <br />
             Olorunsogo, Abeokuta <br />
             Ogun State  <br />
+            Nigeria<br />
             <span>sam4rano@gmail.com</span>
         </div>
         <div className='map-wrapper'>

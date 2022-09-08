@@ -35,7 +35,10 @@ textarea {
 .loader-hidden {
   display: none;
 }
-
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
 .loader-active {
   display: block;
   position: absolute;

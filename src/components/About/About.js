@@ -48,7 +48,7 @@ const About = () => {
             technologies on challenging and diverse projects.
           </p>
         </div>
-        <div className="stage-cube-cont">
+        <div className="stage-cube">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faPython} color="DDO031" />

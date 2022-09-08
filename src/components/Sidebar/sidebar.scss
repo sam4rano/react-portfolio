@@ -130,9 +130,12 @@
     }
 }
 
+.hamburger-icon, .close-icon {
+    display: none;
+}
 
 @media screen and (max-width: 1200px) {
-    .nav-bar { 
+    .sidebar { 
       background: transparent;
       position: initial;
       height: auto;
