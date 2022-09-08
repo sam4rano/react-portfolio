@@ -1,6 +1,6 @@
 .sidebar {
   background: #181818;
-  width: 60px;
+  width: 70px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -11,14 +11,19 @@
   display: block;
   padding: 8px 0;
 }
+.sidebar .logo .log-text {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px;
+  font-family: cursive;
+  text-decoration: none;
+}
 .sidebar .logo img {
   display: block;
   margin: 8px auto;
   width: 24px;
   height: auto;
-}
-.sidebar .logo img.sub-logo {
-  width: 50px;
 }
 .sidebar nav {
   display: block;
