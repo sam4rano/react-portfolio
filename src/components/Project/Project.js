@@ -14,7 +14,7 @@ const Project = () => {
           <div className="image-con con1">
             <img src={Greenbrain} alt="greenbrain projec" className="img-1" />
             <div className="overlay over-1">
-              <a href="greenbrain.netlify.app" className="gb-link text">
+              <a href="https://greenbrain.vercel.app/" className="gb-link text">
                 Greenbrain Project
               </a>
             </div>
@@ -22,7 +22,7 @@ const Project = () => {
           <div className="image-con con2">
             <img src={Uranno} alt="uranno projec" className="img-2" />
             <div className="overlay over-2">
-              <a href="uranno.netlify.app" className="ur-link text">
+              <a href="https://uranno.netlify.app/" className="ur-link text">
                 Uranno Project
               </a>
             </div>
@@ -32,7 +32,7 @@ const Project = () => {
           <div className="image-con con3">
             <img src={Photodesign} alt="photodesign projec" className="img-3" />
             <div className="overlay over-3">
-              <a href="photography.netlify.app" className="pg-link text">
+              <a href="https://photomagikk.netlify.app/" className="pg-link text">
                 Photography Project
               </a>
             </div>
@@ -40,7 +40,7 @@ const Project = () => {
           <div className="image-con con4">
             <img src={Paybeta} alt="paybetta projec" className="img-4" />
             <div className="overlay over-4">
-              <a href="paybetta.netlify.app" className="pp-link text">
+              <a href="https://paybettta.netlify.app/" className="pp-link text">
                 Paybetta Project
               </a>
             </div>
