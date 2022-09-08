@@ -1,44 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 .project-page {
   height: 100%;
-  overflow-x: scroll;
+  overflow-y: scroll;
   scrollbar-color: #ffd700;
   position: absolute;
   left: 10%;
   padding-bottom: 20px;
-}
-.project-page:hover img {
-  opacity: 0.3;
-}
-.project-page:hover .middle {
-  opacity: 1;
-}
-.project-page .middle {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.project-page .page1 {
-  margin-bottom: 20px;
+  width: 100%;
 }
 .project-page .image-page {
   display: flex;
   flex-direction: row;
   height: 800px;
-  margin-left: 30px;
+  padding: 30px;
 }
-.project-page .image-page img {
-  margin: 20px;
+.project-page .image-page .con1:hover .over-1,
+.project-page .image-page .con2:hover .over-2,
+.project-page .image-page .con3:hover .over-3,
+.project-page .image-page .con4:hover .over-4 {
+  opacity: 1;
+}
+.project-page .image-page .over-1,
+.project-page .image-page .over-2,
+.project-page .image-page .over-3,
+.project-page .image-page .over-4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #115173;
+  cursor: pointer;
+}
+.project-page .image-page .over-1 .text,
+.project-page .image-page .over-2 .text,
+.project-page .image-page .over-3 .text,
+.project-page .image-page .over-4 .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project-page .image-page .image-con {
+  position: relative;
+  width: 100%;
+}
+.project-page .image-page .image-con .overlay {
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+.project-page .image-page .image-con .overlay a:link {
+  color: red;
+}
+.project-page .image-page .image-con .overlay a:visited {
+  color: #fff;
+}
+.project-page .image-page .image-con .overlay a:hover {
+  color: #ffd700;
+}
+.project-page .image-page .image-con .overlay a:active {
+  color: blue;
+}
+.project-page .image-page .image-con img {
+  margin-bottom: 30px;
   width: 500px;
   height: 100%;
-  opacity: 1;
-  display: block;
-  opacity: 1;
-  transition: 0.5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }/*# sourceMappingURL=project.css.map */

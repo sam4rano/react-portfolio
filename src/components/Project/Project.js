@@ -11,36 +11,36 @@ const Project = () => {
     <>
       <div className="container project-page">
         <div className="image-page page1">
-          <div className="image-con">
+          <div className="image-con con1">
             <img src={Greenbrain} alt="greenbrain projec" className="img-1" />
-            <div className="middle">
-              <a href="greenbrain.netlify.app" className="img-link">
+            <div className="overlay over-1">
+              <a href="greenbrain.netlify.app" className="gb-link text">
                 Greenbrain Project
               </a>
             </div>
           </div>
-          <div className="image-con">
+          <div className="image-con con2">
             <img src={Uranno} alt="uranno projec" className="img-2" />
-            <div className="middle">
-              <a href="uranno.netlify.app" className="img-link">
+            <div className="overlay over-2">
+              <a href="uranno.netlify.app" className="ur-link text">
                 Uranno Project
               </a>
             </div>
           </div>
         </div>
         <div className="image-page">
-          <div className="image-con">
+          <div className="image-con con3">
             <img src={Photodesign} alt="photodesign projec" className="img-3" />
-            <div className="middle">
-              <a href="photography.netlify.app" className="img-link">
+            <div className="overlay over-3">
+              <a href="photography.netlify.app" className="pg-link text">
                 Photography Project
               </a>
             </div>
           </div>
-          <div className="image-con">
+          <div className="image-con con4">
             <img src={Paybeta} alt="paybetta projec" className="img-4" />
-            <div className="middle">
-              <a href="paybetta.netlify.app" className="img-link">
+            <div className="overlay over-4">
+              <a href="paybetta.netlify.app" className="pp-link text">
                 Paybetta Project
               </a>
             </div>
