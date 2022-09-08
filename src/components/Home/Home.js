@@ -52,7 +52,6 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo /> */}
       </div>
       <img src={LogoSS} alt="logo" className="logoS" />
     </>

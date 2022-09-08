@@ -89,47 +89,78 @@
     }
   }
   
-  
-  
-  @media screen and (max-width: 1200px) {
-    .tags,
-    .home-page h1:before,
-    .home-page h1:after {
-      display: none;
-    }
-  
-    .home-page .text-zone {
-      position: initial;
-      width: 100%;
-      transform: none;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-  
-    .home-page .flat-button {
-      float: none;
-      display: block;
-      margin: 20px auto 0 auto;
-      width: 124px;
-    }
-  
-    .logo-container {
-      position: relative;
-      width: 100px;
-      height: auto;
-      top: 50px;
-      right: 0;
-      box-sizing: border-box;
-      margin: auto;
-      left: 0;
-    }
-  
-    .logo-container svg {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+
+  .home-page .text-zone {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .home-page .flat-button {
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 124px;
+  }
+
+  .logo-container {
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+  }
+
+  .logo-container svg {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+  }
+  .flat-button {
+    color: #ffd700;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid #ffd700;
+    margin-top: 20px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
     }
   }
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .flat-button {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
