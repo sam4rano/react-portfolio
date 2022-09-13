@@ -20,7 +20,7 @@ import { useState } from 'react'
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
   return (
-    <div className="sidebar">
+    <div className="topbar">
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" onClick={() => setShowNav(false)} />
         <h1 className="log-text">SAMUEL</h1>
@@ -29,6 +29,7 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
+          className="navlink"
           to="/"
           onClick={() => setShowNav(false)}
         >
@@ -37,7 +38,7 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
-          className="about-link"
+          className="about-link navlink "
           to="/about"
           onClick={() => setShowNav(false)}
         >
@@ -46,7 +47,7 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
-          className="contact-link"
+          className="contact-link navlink"
           to="/contact"
           onClick={() => setShowNav(false)}
         >
@@ -55,7 +56,7 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
-          className="project-link"
+          className="project-link navlink"
           to="/project"
           onClick={() => setShowNav(false)}
         >

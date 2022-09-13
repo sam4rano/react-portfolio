@@ -1,40 +1,40 @@
-.sidebar {
+.topbar {
   background: #181818;
-  width: 70px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 3;
-  min-height: 500px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
 }
-.sidebar .logo {
-  display: block;
-  padding: 8px 0;
+.topbar .logo {
+  padding: 10px;
 }
-.sidebar .logo .log-text {
-  color: #fff;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 4px;
+.topbar .logo .log-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
   font-family: cursive;
   text-decoration: none;
 }
-.sidebar .logo img {
-  display: block;
-  margin: 8px auto;
+.topbar .logo img {
+  margin: 4px auto;
   width: 24px;
   height: auto;
 }
-.sidebar nav {
-  display: block;
+.topbar nav {
   text-align: center;
-  position: absolute;
-  height: 210px;
-  top: 50%;
-  margin-top: -120px;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
 }
-.sidebar nav a {
+.topbar nav .navlink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 4px;
+}
+.topbar nav a {
   font-size: 22px;
   color: #4d4d4e;
   display: block;
@@ -43,19 +43,19 @@
   position: relative;
   text-decoration: none;
 }
-.sidebar nav a i {
+.topbar nav a i {
   transition: all 0.3s ease-out;
 }
-.sidebar nav a:hover {
+.topbar nav a:hover {
   color: #ffd700;
 }
-.sidebar nav a:hover svg {
+.topbar nav a:hover svg {
   opacity: 0;
 }
-.sidebar nav a:hover:after {
+.topbar nav a:hover:after {
   opacity: 1;
 }
-.sidebar nav a:after {
+.topbar nav a:after {
   content: "";
   font-size: 9px;
   letter-spacing: 2px;
@@ -67,22 +67,22 @@
   opacity: 0;
   transition: all 0.3s ease-out;
 }
-.sidebar nav a:first-child:after {
+.topbar nav a:first-child:after {
   content: "HOME";
 }
-.sidebar nav a.about-link:after {
+.topbar nav a.about-link:after {
   content: "ABOUT";
 }
-.sidebar nav a.contact-link:after {
+.topbar nav a.contact-link:after {
   content: "CONTACT";
 }
-.sidebar nav a.project-link:after {
+.topbar nav a.project-link:after {
   content: "PROJECT";
 }
-.sidebar nav a.active svg {
+.topbar nav a.active svg {
   color: #ffd700;
 }
-.sidebar ul {
+.topbar ul {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -92,13 +92,13 @@
   text-align: center;
   margin: 0;
 }
-.sidebar ul li a {
+.topbar ul li a {
   padding: 7px 0;
   display: block;
   font-size: 15px;
   line-height: 16px;
 }
-.sidebar ul li a:hover svg {
+.topbar ul li a:hover svg {
   color: #ffd700;
 }
 
@@ -107,16 +107,16 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .sidebar {
+  .topbar {
     background: transparent;
     position: initial;
     height: auto;
     min-height: auto;
   }
-  .sidebar ul, .sidebar nav {
+  .topbar ul, .topbar nav {
     display: none;
   }
-  .sidebar nav {
+  .topbar nav {
     width: 100%;
     top: 0;
     left: 0;
@@ -126,25 +126,25 @@
     z-index: 2;
     position: fixed;
   }
-  .sidebar nav.mobile-show {
+  .topbar nav.mobile-show {
     display: block;
   }
-  .sidebar nav a {
+  .topbar nav a {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .sidebar nav a:after {
+  .topbar nav a:after {
     opacity: 1;
     position: initial;
     width: auto;
     margin-left: 10PX;
   }
-  .sidebar nav a svg {
+  .topbar nav a svg {
     opacity: 1 !important;
   }
-  .sidebar .hamburger-icon,
-.sidebar .close-icon {
+  .topbar .hamburger-icon,
+.topbar .close-icon {
     position: absolute;
     top: 15px;
     right: 15px;
