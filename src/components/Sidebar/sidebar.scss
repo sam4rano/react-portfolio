@@ -195,6 +195,10 @@
     justify-content: space-between;
     padding: 5px;
 
+    .navlink {
+        padding:20px;
+    }
+
     .logo {
         padding: 10px;
 
@@ -296,19 +300,19 @@
         }
 
         ul {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: block;
-        padding: 0;
+        width: 40%;
         list-style-type: none;
         text-align: center;
         margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: row;
 
         li {
             a{
                 padding:7px 0;
-                display: block;
+                display: flex;
                 font-size: 15px;
                 line-height: 16px;
 
