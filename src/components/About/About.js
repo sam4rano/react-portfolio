@@ -38,14 +38,8 @@ const About = () => {
             technologies on challenging and diverse projects.
           </p>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          I always give my absolute best to any project am working on at any 
+            instance of time to with the mind of bringing out intended result
           </p>
         </div>
         <div className="stage-cube-cont">
